@@ -1,0 +1,15 @@
+var OrangeJuice = function() {
+  // find the probability of drinking orange juice during breakfast
+  var wakeUpLate = flip(0.3)
+  var wakeUpEarly = wakeUpLate ? 0 : flip(0.3)
+  var breakfastBagel = wakeUpLate ? flip(0.7) : flip(0.3)
+  var breakfastPancake = wakeUpLate ? flip(0.2) : flip(0.5)
+  var bagelAndOJ = breakfastBagel ? flip(0.7) : 0
+  var pancakeAndOJ = breakfastPancake ? flip(0.7) : 0
+  
+  var OJ = (bagelAndOJ || pancakeAndOJ) ? 1 : 0
+  
+  return OJ
+}
+
+viz.auto(Infer({method: 'enumerate'}, OrangeJuice))
