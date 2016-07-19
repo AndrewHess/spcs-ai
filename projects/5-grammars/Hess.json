@@ -1,0 +1,7 @@
+{
+    "origin": ["#person# once said, '#first# will either lead to #second# or #third#.'"],
+    "person":["Thomas Jefferson", "Winston Churchill", "William Shakespeare", "Abraham Lincoln", "Socrates"],
+    "first":["failure", "persistence", "kindness", "technology"],
+    "second":["war", "peace", "economic instability", "teleportation", "space travel"],
+    "third":["vital viruses", "moral destruction", "success", "food shortages"]
+}
