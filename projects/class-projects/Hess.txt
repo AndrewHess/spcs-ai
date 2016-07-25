@@ -1,0 +1,11 @@
+Group: 
+Andrew Hess
+
+Goal: 
+Make an AI player for checkers that wins against an average human player at least 60 percent of the time
+
+Expected Design: 
+The AI will use some type of reinforcement learning (possibly Q-learning) and will apply rotations and/or mirror transformations to the board so it knows how to react to more states than it has seen. If it reaches a state it has not seen, it will try to make the best move based on how many opponents it will capture, if it will be promoted, and if the opponent will have the opportunity to capture a piece or promote. The AI player could learn in part by playing against human players but will likely mostly learn by playing against itself or other checker AI players.
+
+Halfway point:
+Make an AI player that does not unnecessarily put itself in danger and will caputure an opponent if there is no danger in doing so (i.e. it will not be immediately captured)
